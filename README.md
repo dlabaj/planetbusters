@@ -30,3 +30,29 @@ doesn't run, or even to other middleware.
 
 Also I'm not the cleanest of coders, this is actually one of my neater sources (but it's
 also very small compared to other stuff). My idea is: if the code works, it works, move on!
+
+
+## build
+
+This project has been modernized to build the Desktop target with Java 21 and Gradle 8, while Android/iOS migration is pending.
+
+Prerequisites (Linux):
+- Java 17, 21, or any newer LTS version (21+); the build will target Java 8 bytecode for compatibility with LibGDX 1.7.x.
+
+Desktop (run + package):
+
+```bash
+# Run the game (opens a window)
+./gradlew desktop:run
+
+# Build a runnable fat jar (includes assets and dependencies)
+./gradlew desktop:dist
+
+# Output: desktop/build/libs/desktop-1.0.jar
+```
+
+Android/iOS
+- Android and iOS modules are temporarily excluded from the build while the project is upgraded to current Android Gradle Plugin / iOS toolchain. If you need these targets, open an issue or PR and we can migrate them next.
+
+Troubleshooting:
+- If you see Java compile warnings about source/target 8 being obsolete, they are safe; we intentionally build Java 8 bytecode for library compatibility.

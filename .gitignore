@@ -1,0 +1,49 @@
+# Gradle
+.gradle/
+**/build/
+**/bin/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Java
+*.class
+hs_err_pid*
+
+# LibGDX / Assets
+# Keep assets in VCS; they're under android/assets
+!android/assets/**
+
+# Android (legacy + modern)
+local.properties
+**/gen/
+**/out/
+**/.externalNativeBuild/
+**/.cxx/
+**/captures/
+*.apk
+*.ap_
+*.aab
+*.dex
+
+# iOS (RoboVM) build outputs
+**/ios/build/
+**/ios/robovm-build/
+**/robovm.cache/
+
+# IDEs and editors
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+*.orig
+*~

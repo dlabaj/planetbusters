@@ -1,1 +1,2 @@
-include 'desktop', 'android', 'ios', 'core'
+// Temporarily limit to desktop + core while migrating Android/iOS to modern plugins
+include 'desktop', 'core'
