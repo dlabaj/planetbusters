@@ -37,7 +37,7 @@ also very small compared to other stuff). My idea is: if the code works, it work
 This project has been modernized to build the Desktop target with Java 21 and Gradle 8, while Android/iOS migration is pending.
 
 Prerequisites (Linux):
-- Java 21 (or 17/23); the build will target Java 8 bytecode for compatibility with LibGDX 1.7.x.
+- Java 17, 21, or any newer LTS version (21+); the build will target Java 8 bytecode for compatibility with LibGDX 1.7.x.
 
 Desktop (run + package):
 
